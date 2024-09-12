@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <style>
+        body{
+            background-color:gray;
+        }
+        img{
+            
+            height:9cm;
+            width:9cm;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:2cm;
+            border-radius:10px;
+        }
+        .label{
+            text-align:center;
+            font-family:math;
+        }
+        button{
+            margin-right:500px;
+            margin-left:630px;
+            height:1cm;
+            width:7cm;
+            border-radius:10px;
+        }
+        
+    </style>
+</head>
+<body>
+    {%if Output=="Speed limit (20km/h)"%}
+        <img src="{{url_for('static', filename='/Images/speed limit-20km.png')}}" />
+
+    {%elif Output=="Speed limit (30km/h)"%}
+        <img src="{{url_for('static', filename='/Images/speed limit-30km.png')}}" />
+
+    {%elif Output=="Speed limit (50km/h)"%}
+        <img src="{{url_for('static', filename='/Images/speed limit-50km.png')}}" />
+
+    {%elif Output=="Speed limit (60km/h)"%}
+        <img src="{{url_for('static', filename='/Images/speed limit-60km.png')}}" />
+
+    {%elif Output=="Speed limit (70km/h)"%}
+        <img src="{{url_for('static', filename='/Images/speed limit-70km.png')}}" />
+
+    {%elif Output=="Speed limit (80km/h)"%}
+        <img src="{{url_for('static', filename='/Images/speed limit-80km.png')}}" /> 
+
+    {%elif Output=="End of speed limit (80km/h)"%}
+        <img src="{{url_for('static', filename='/Images/End limit-80km.png')}}" />  
+
+    {%elif Output=="Speed limit (100km/h)"%}
+        <img src="{{url_for('static', filename='/Images/speed limit-100km.png')}}" /> 
+
+    {%elif Output=="Speed limit (120km/h)"%}
+        <img src="{{url_for('static', filename='/Images/speed limit-120km.png')}}" />
+
+    {%elif Output=="No passing"%}
+        <img src="{{url_for('static', filename='/Images/No passing.png')}}" />
+        
+    {%elif Output=="No passing for vechiles over 3.5 metric tons"%}
+        <img src="{{url_for('static', filename='/Images/No passing for vechiles over 3.5 metric tons.png')}}" />
+
+    {%elif Output=="Right-of-way at the next intersection"%}
+        <img src="{{url_for('static', filename='/Images/Right-of-way at the next intersection.jpg')}}" /> 
+
+    {%elif Output=="Priority road"%}
+        <img src="{{url_for('static', filename='/Images/priorty.png')}}" /> 
+
+    {%elif Output=="Yield"%}
+        <img src="{{url_for('static', filename='/Images/yield.png')}}" /> 
+
+    {%elif Output=="Stop"%}
+        <img src="{{url_for('static', filename='/Images/stop.jpg')}}" />
+
+    {%elif Output=="No vechiles"%}
+        <img src="{{url_for('static', filename='/Images/No vechiles.jpeg')}}" /> 
+
+    {%elif Output=="Vechiles over 3.5 metric tons prohibited"%}
+        <img src="{{url_for('static', filename='/Images/Vechiles over 3.5 metric tons prohibited.jpg')}}" />
+
+    {%elif Output=="No Entry"%}
+        <img src="{{url_for('static', filename='/Images/No entry.jpeg')}}" /> 
+
+    {%elif Output=="General caution"%}
+        <img src="{{url_for('static', filename='/Images/General caution.jpg')}}" />
+
+    {%elif Output=="Dangerous curve to the left"%}
+        <img src="{{url_for('static', filename='/Images/Dangerous curve to the left.jpg')}}" /> 
+
+    {%elif Output=="Dangerous curve to the right"%}
+        <img src="{{url_for('static', filename='/Images/Dangerous curve to the right.png')}}" />
+
+    {%elif Output=="Double curve"%}
+        <img src="{{url_for('static', filename='/Images/Double curve.png')}}" />
+
+    {%elif Output=="Bumpy road"%}
+        <img src="{{url_for('static', filename='/Images/Bumpy road.jpeg')}}" />
+
+    {%elif Output=="Slippery road"%}
+        <img src="{{url_for('static', filename='/Images/Slippery road.jpeg')}}" />
+
+    {%elif Output=="Road narrows on the right"%}
+        <img src="{{url_for('static', filename='/Images/Road narrows on the right.png')}}" />
+
+    {%elif Output=="Road work"%}
+        <img src="{{url_for('static', filename='/Images/Road Work.png')}}" />
+
+    {%elif Output=="Traffic signals"%}
+        <img src="{{url_for('static', filename='/Images/Traffic signals.jpeg')}}" /> 
+    
+    {%elif Output=="Pedestrians"%}
+        <img src="{{url_for('static', filename='/Images/Pedestrians.jpeg')}}" /> 
+    
+    {%elif Output=="Children crossing"%}
+        <img src="{{url_for('static', filename='/Images/Children crossing.jpeg')}}" />
+        
+    {%elif Output=="Bicycles crossing"%}
+        <img src="{{url_for('static', filename='/Images/Bicycles crossing.jpeg')}}" />
+
+    {%elif Output=="Beware of ice/snow"%}
+        <img src="{{url_for('static', filename='/Images/Beware of ice/snow.jpeg')}}" />
+
+    {%elif Output=="Wild animals crossing"%}
+        <img src="{{url_for('static', filename='/Images/Wild animals crossing.png')}}" />
+
+    {%elif Output=="End of all speed and passing limits"%}
+        <img src="{{url_for('static', filename='/Images/End of all speed and passing limits.png')}}" />
+
+    {%elif Output=="Turn right ahead"%}
+        <img src="{{url_for('static', filename='/Images/Turn right ahead.png')}}" />
+
+    {%elif Output=="Turn left ahead"%}
+        <img src="{{url_for('static', filename='/Images/Turn left ahead.png')}}" />
+
+    {%elif Output=="Ahead only"%}
+        <img src="{{url_for('static', filename='/Images/Ahead only.png')}}" />
+
+    {%elif Output=="Go straight or right"%}
+        <img src="{{url_for('static', filename='/Images/go stright or right-1.png')}}" />
+
+    {%elif Output=="Go straight or left"%}
+        <img src="{{url_for('static', filename='/Images/go straight or left.jpeg')}}" />
+
+    {%elif Output=="Keep right"%}
+        <img src="{{url_for('static', filename='/Images/keep right.png')}}" />
+
+    {%elif Output=="Keep left"%}
+        <img src="{{url_for('static', filename='/Images/keep left.png')}}" />
+
+    {%elif Output=="Roundabout mandatory"%}
+        <img src="{{url_for('static', filename='/Images/Roundabout mandatory.png')}}" />
+
+    {%elif Output=="End of no passing"%}
+        <img src="{{url_for('static', filename='/Images/End of no passing.png')}}" />
+
+    {%elif Output=="End of no passing by vechiles over 3.5 metric tons"%}
+        <img src="{{url_for('static', filename='/Images/End of no passing by vechiles over 3.5 metric tons.png')}}" />
+    {%endif%}
+
+    <h1 class="label">{{Output}}</h1>
+    <a href="/"><button>BACK</button></a>
+
+</body>
+</html>

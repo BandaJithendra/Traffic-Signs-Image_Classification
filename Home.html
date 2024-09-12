@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            background-image: url("{{url_for('static', filename='/Images/background2.jp')}}");
+            background-size:cover;
+            position:relative;
+            background-color:#508f71;
+        }
+        .container{
+            padding-top:150px;
+        }
+        .title{
+            margin-top:2cm;
+            text-align:center;
+            font-size:100px;
+            font-family:math;
+            color:;
+        }
+
+        .input{
+            margin-left:640px;
+            left:42%;
+            font-size:20px;
+            font-family: cursive;
+        }
+        .file{
+            height:15mm;
+            font-size:18px;
+            font-family: cursive;
+            background-color:blu;
+        }
+        input#file-upload-button{
+            background-color:red;
+        }
+        .sub{
+            font-size:16px;
+            height:8mm;
+            width:5cm;
+            position: relative;
+            left: 44%;
+            border-radius:5px;
+            background-color:black;
+            color: #508f71;
+            font-family: math;
+            font-size: 25px;
+            padding-bottom: 30px;
+        }
+        .image{
+            margin-left:500px;
+            margin-right:px;
+            height:7cm;
+            width:15cm;
+            border-radius:10px;
+        }
+        label{
+            margin-left:-1cm;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h>Traffic Signs Classification</h1>
+    </div>
+    <im class="image" src="{{url_for('static', filename='/Images/fornt.png')}}"/>
+    <div class="container">
+        <form action="/home" method="post">
+            <div class="input">
+                <label>Upload File: </label>
+                <input class="file" type="file" name="file">
+            </div>
+            <br>
+            <input class="sub" type="submit" value="Classify Image" />
+        </form>
+    </div>
+
+</body>
+</html>

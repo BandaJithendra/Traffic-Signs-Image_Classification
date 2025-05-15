@@ -1,0 +1,9 @@
+numpy
+matplotlib
+os
+PIL
+sklearn
+keras
+tensorflow
+flask
+aspose
